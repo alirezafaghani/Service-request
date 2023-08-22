@@ -1,0 +1,346 @@
+<html>
+
+<head>
+    <!-- ALIREZA FAGHANI -->
+    <meta charset="utf-8">
+    
+    <link href="/icofont/icofont.min.css" rel="stylesheet">
+    <link href="bootstrap5_css" rel="stylesheet">
+    <link href="bootstrap5_css_rtl" rel="stylesheet">
+   
+
+    <style>
+        @font-face {
+            font-family: shabnam;
+            src: url(Font_Shabnam);
+        }
+
+        body {
+            font-family: shabnam !important;
+        }
+
+        body .card-footer {
+            background-color: white;
+            border-top: 1px solid #eee;
+        }
+
+        body .card-header {
+            padding: .5rem 1rem;
+            margin-bottom: 0;
+            background-color: white;
+            border-bottom: 1px solid #eee;
+        }
+
+        body .card {
+            margin-bottom: 18px;
+            background-color: #fff;
+            border: 1px solid transparent;
+            border-radius: 15px;
+            -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+            box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid #eee;
+            border-radius: .25rem;
+            box-shadow: 1px 3px 15px 1px rgb(0 0 0 / 7%);
+            border-color: #eee;
+        }
+
+        .loader {
+            background: #ffffff;
+            opacity: 0.8;
+            top: 0;
+            left: 0;
+            border-radius: 18px;
+            width: 100%;
+            height: 100%;
+            z-index: 99999
+        }
+
+        .loader .spinner-border {
+            position: absolute;
+            top: 45%;
+            width: 3rem;
+            height: 3rem;
+            left: 45%;
+        }
+
+        .amsify-selection-list {
+            width: 98% !important
+        }
+
+        .amsify-selection-label {
+            direction: rtl;
+            height: 60px;
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem .375rem 2.25rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 4;
+            color: #212529;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: left .75rem center;
+            background-size: 16px 12px;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container " style="font-family: undefined; font-family: 'B Nazanin' ;">
+        <div class="position-absolute  loader d-none">
+            <div class="spinner-border text-dark" role="status"></div>
+        </div>
+       
+        <!-- ADSL -->
+        <div class="card text-center d-none" title="service">
+            <div class="card-header">
+
+                <i class="icofont-3x text-success icofont-contact-add"></i>
+                <h5 class="text-dark"> سرویس  </h5>
+                <br><br>
+                <p><img src=""> استعلام  </p>
+                <img src="" class="border rounded brand-logo" alt="...">
+
+            </div>
+            <div class="card-body pr-5 px-5">
+                <form class="serlect-service-type-form text-start">
+                    <div class="row mb-3 px-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="providertype" id="exampleRadios1"
+                                value="43" checked="">
+                            <label class="form-check-label" for="exampleRadios1">
+                                test2
+                                <img src="">
+
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="providertype" id="exampleRadios2"
+                                value="63">
+                            <label class="form-check-label" for="exampleRadios2">
+                                test1
+                                <img src="">
+
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" name="ADSL-PhoneNumber" class="form-control" id="floatingInput"
+                            placeholder="شماره تلفن">
+                        <label for="floatingInput">شماره تلفن</label>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            شماره تلفن وارد شده معتبر نیست
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="card-footer text-muted  pt-4 pb-4">
+                <div class="d-grid gap-2">
+                    <button data-action="next" data-content="ADSL-service" class="btn btn-outline-success"
+                        type="button"><i class="icofont-1x icofont-checked"></i> استعلام </button>
+                </div>
+            </div>
+        </div>
+        <!-- National Code -->
+        <div class="card text-center d-none" title="National-Code">
+            <div class="card-header">
+
+                <i class="icofont-3x text-success icofont-contact-add"></i>
+                <h5 class="text-dark"> سرویس  </h5>
+                <p><img src=""> استعلام شخص </p>
+                <img src="" class="border rounded brand-logo" alt="...">
+
+            </div>
+
+            <div class="card-body pr-5 px-5">
+                <form class="serlect-service-type-form text-start">
+                    <div class="form-floating mb-3">
+                        <input type="text" name="NationalCode" class="form-control" id="NationalCodefloatingInput"
+                            placeholder="شماره ملی">
+                        <label for="floatingInput">شماره ملی</label>
+                        <div id="validationServer03Feedback1" class="invalid-feedback">
+                            شماره ملی وارد شده معتبر نیست
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-footer text-muted  pt-4 pb-4">
+                <div class="d-grid gap-2">
+                    <button data-action="next" data-content="NationalCode" class="btn btn-outline-success"
+                        type="button"><i class="icofont-1x icofont-checked"></i> استعلام </button>
+                </div>
+            </div>
+        </div>
+        <!-- Person registration form -->
+        <div class="card text-center d-none" title="Person-registration-form">
+            <div class="card-header">
+                <i class="icofont-3x text-success icofont-contact-add"></i>
+                <h5 class="text-dark"> سرویس پرسنلی </h5>
+                <p><i class="text-danger  icofont-ui-network"></i> فرم ثبت نام شخص </p>
+            </div>
+            <div class="card-body pr-5 px-5">
+                <form class="serlect-service-type-form text-start">
+                    <div class="container-fluid row mb-3 px-3">
+                        <!-- Firstname -->
+                        <div class="form-group mb-3" data-container="Firstname">
+                            <label for="Firstname">نام<strong class="text-danger">*</strong></label>
+                            <input autocomplete="off" class="form-control" id="FirstName" name="FirstName"
+                                placeholder="نام" type="text" value="">
+                            <span class="field-validation-valid text-danger" data-valmsg-for="FirstName"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <!-- Lastname -->
+                        <div class="form-group mb-3" data-container="Lastname">
+                            <label for="Lastname">نام خانوادگی<strong class="text-danger">*</strong></label>
+                            <input autocomplete="off" class="form-control" id="LastName" name="LastName"
+                                placeholder="نام خانوادگی" type="text" value="">
+                            <span class="field-validation-valid text-danger" data-valmsg-for="LastName"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <!-- Mobile -->
+                        <div class="form-group mb-3" data-container="Mobile">
+                            <label for="Mobile">موبایل<strong class="text-danger">*</strong></label>
+                            <input autocomplete="off" class="form-control persiannumber fanumtoen" id="MobileNumber"
+                                name="MobileNumber" placeholder="موبایل" type="text" value="">
+                            <span class="field-validation-valid text-danger" data-valmsg-for="MobileNumber"
+                                data-valmsg-replace="true"></span>
+                        </div>
+                        <!-- Postalcode -->
+                        <div class="form-group mb-3" data-container="Postalcode">
+                            <label for="Postalcode">
+                                کدپستی
+                            </label>
+
+                            <input autocomplete="off" class="form-control persiannumber fanumtoen" data-val="true"
+                                data-val-length="طول این فیلد باید 10 کاراکتر باشد." data-val-length-max="10"
+                                data-val-length-min="10" id="Postalcode" name="Postalcode" placeholder="کدپستی"
+                                type="text" value="">
+                            <span class="field-validation-valid text-danger" data-valmsg-for="Postalcode"
+                                data-valmsg-replace="true"></span>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-muted  pt-4 pb-4">
+                <div class="text-center">
+
+                    <button data-action="next" data-content="PersonRegistrationForm" class="btn btn-outline-success "
+                        id="Complete-button" type="button"><i class="icofont-1x icofont-checked"></i> ساخت مشترک
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--End-->
+        <div class="card text-center d-none" title="end">
+            <div class="card-header">
+                <i class="icofont-3x text-success icofont-contact-add"></i>
+                <h5 class="text-dark"> نتیجه </h5>
+
+                <img src="" class="border rounded brand-logo" alt="...">
+            </div>
+            <div class="card-body pr-5 px-5">
+                <div class="success-alert alert alert-success d-flex align-items-center text-end " role="alert"
+                    style="direction:rtl">
+                    <i class="icofont-2x icofont-check-circled px-2 "></i>
+                    <div class="message text-start">
+                        <h6 id="CreateserviceH61"></h6>
+                        <p id="ContactInquiryp1"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card-footer text-muted  pt-4 pb-4">
+                <div class="d-grid gap-2">
+                    <button data-content="Complete" class="btn btn-outline-success " id="Complete-button"
+                        onclick="FillFields()" type="button"><i class="icofont-1x icofont-checked"></i> تکمیل 
+                    </button>
+                </div>
+                <div class="text-start d-none" title="test1">
+                    <div class="message align-items-center ">
+                        <a href="#" class="btn btn-sm btn-primary"
+                            target="_blank">ورود  </a>
+                        <p class="text-info small pt-2">.جهت خرید از طریق دکمه ی بالا وارد شوید<i
+                                class="m-1 icofont-1x text-info icofont-info-circle"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class=" text-start d-none" title="test2">
+                    <div class="message align-items-center ">
+                        <a href="#" class="btn btn-sm btn-primary"
+                            target="_blank">ورود  </a>                           
+                        <p class="text-info small pt-2">.جهت خرید از طریق دکمه ی بالا وارد شوید<i
+                                class="m-1 icofont-1x text-info icofont-info-circle"></i>
+                        </p>                       
+                    </div>
+                </div>
+                <div class=" text-start d-none" title="DeleteServiceButton">
+                    <div class="message align-items-center ">                        
+                            <button class="btn btn-sm btn-danger"
+                            target="_blank" onclick="DeleteService()"> حذف  </button>                        
+                        <p class="text-danger small pt-2">.جهت حذف  بر روی دکمه حذف کلیک کنید<i
+                            class="m-1 icofont-1x text-danger icofont-file-remove"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Createservice -->
+        <div class="card text-center d-none" title="Createservice">
+            <div class="card-header">
+                <i class="icofont-3x text-success icofont-contact-add"></i>
+                <h5 class="text-dark"> ساخت </h5>
+
+                <img src="" class="border rounded brand-logo" alt="...">
+            </div>
+            <div class="card-body pr-5 px-5">
+                <div class="success-alert alert alert-success d-flex align-items-center text-end " role="alert"
+                    style="direction:rtl">
+                    <i class="icofont-2x icofont-check-circled px-2 "></i>
+                    <div class="message text-start">
+                        <h6 id="CreateserviceH6"></h6>
+                        <p id="ContactInquiryp"></p>
+                    </div>
+                </div>
+                <div class="error-alert alert alert-danger d-flex align-items-center d-none" role="alert"
+                    style="direction:rtl">
+                    <i class="icofont-2x icofont-close-circled px-2 "></i>
+                    <div class="message">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer text-muted  pt-4 pb-4">
+                <div class="d-grid gap-2">
+                    <button data-action="next" data-content="Createservice" class="btn btn-outline-success "
+                        id="Createservice" type="button"><i class="icofont-1x icofont-checked"></i> ساخت  </button>
+                </div>
+            </div>
+        </div>
+        <!-- error message -->
+        <div class="alert alert-danger d-none" role="alert" title="alert"></div>
+    </div>
+    </div>
+    <script src="Jquery"></script>
+    <script src="bootstrap5_min.js"></script>
+    
+</body>
+
+</html>
